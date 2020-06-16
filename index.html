@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scottish Athletics</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container text-center">
+    <div id="space"></div>
+    <div class="jumbotron">
+      <h1 class="display-4">Task 1</h1>
+      <pre class="lead" style="text-align:left;">
+        Scottish Athletics is running trials for 400 metre athletes. There are four groups of
+        eight athletes. The runners run two separate laps and their times are recorded as
+        they complete each of the two laps. Any runner who completes either of the two laps
+        in under 50 seconds progresses to the next stage of selection. The runner from each
+        of the groups with the fastest lap will receive a medal of commendation.
+        Your task is:
+        - to write a program for one of the groups of female runners
+        - find the runners who will progress to the next stage
+        - find the runner with the fastest lap
+        Save this information to a file. You can assume that no two runners have the same name.
+        The program requires the following inputs:
+        - a valid number of runners
+        - the first and second name of each runner
+        - the time taken to run the first lap
+        - the time taken to run the second lap
+        The output from the program should display the fastest runner, each runner’s name
+        and indicate whether they will progress to the next stage of selection.
+      </pre>
+      <hr class="my-4">
+      <!-- list of athletes -->
+      <div class="text-center" id="section1">
+        <h1> Scottish Female 400m Qualifications: (Results)</h1>
+        <h2 ><span id="fastestathlete"></span>
+          <img src="medal.jpg" alt="Should be a medal here !">
+        </h2>
+        <table class="tabel" id="firstdisplay">
+          <tr>
+            <th>Firstname :</th>
+            <th>Lastname :</th>
+            <th>First Lap:</th>s
+            <th>Second Lap:</th>
+            <th>Qualified:</th>
+          </tr>
+          <!-- all runners here -->
+        </table>
+        <br><br>
+      </div>
+      <!-- end of list of athletes -->
+      <button type="submit" class="btn btn-success btn-lg result1" onclick="document.location.reload()" > Refresh Page </button>
+      <!--  -->
+      <!-- -->
+    </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+  <footer class="text-center" style="color:red;font-size:16px;font-weight:900;">&copy; By Lewis Klein </footer>
+</body>
+</html>
